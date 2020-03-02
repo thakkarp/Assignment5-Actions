@@ -17,7 +17,7 @@ def getNumDays(date1, date2):
     d2 = 0
     diff = 0
     if date1 == "Monday":
-        d1 = 2
+        d1 = 1
     if date1 == "Tuesday":
         d1 = 2
     if date2 == "Monday":
