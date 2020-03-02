@@ -16,5 +16,10 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected, actual)
 
 
+    def test3(self):
+        list = []
+        list = [4, 8, 2, 0, 1, 9]
+        self.assertEqual([4, 9], task.getFirstAndLast(list))
+
 if __name__ == '__main__':
     unittest.main()
