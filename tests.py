@@ -20,6 +20,14 @@ class TestCase(unittest.TestCase):
         list = [4, 8, 2, 0, 1, 9]
         self.assertEqual([4, 9], task.getFirstAndLast(list))
 
+    def test4(self):
+        dayDiff = task.getNumDays("Monday", "Tuesday")
+        self.assertEqual(1, dayDiff)
+        dayDiff = task.getNumDays("Saturday", "Wednesday")
+        self.assertEqual(3, dayDiff)
+        dayDiff = task.getNumDays("Friday", "Sunday")
+        self.assertEqual(2, dayDiff)
+
 
 if __name__ == '__main__':
     unittest.main()
