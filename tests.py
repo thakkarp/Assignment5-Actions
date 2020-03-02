@@ -12,8 +12,8 @@ class TestCase(unittest.TestCase):
 
     def test2(self):
         actual = task.getArea(0)
-        expected = 0.0
-        self.assertNotEqual(expected, actual)
+        expected = 0
+        self.assertEqual(expected, actual)
 
 
 if __name__ == '__main__':
