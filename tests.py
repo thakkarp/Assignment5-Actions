@@ -12,7 +12,7 @@ class TestCase(unittest.TestCase):
 
     def test2(self):
         actual = task.getArea(0)
-        expected = 0
+        expected = 0.0
         self.assertNotEqual(expected, actual)
 
 
