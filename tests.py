@@ -23,10 +23,8 @@ class TestCase(unittest.TestCase):
     def test4(self):
         dayDiff = task.getNumDays("Monday", "Tuesday")
         self.assertEqual(1, dayDiff)
-        dayDiff = task.getNumDays("Saturday", "Wednesday")
-        self.assertEqual(3, dayDiff)
-        dayDiff = task.getNumDays("Friday", "Sunday")
-        self.assertEqual(2, dayDiff)
+        dayDiff = task.getNumDays("Tuesday", "Monday")
+        self.assertEqual(1, dayDiff)
 
 
 if __name__ == '__main__':
