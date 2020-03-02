@@ -9,4 +9,4 @@ def getArea(radius):
 
 def getFirstAndLast(list):
     length = len(list)
-    return [list[0], list[length]]
+    return [list[0], list[length - 1]]
